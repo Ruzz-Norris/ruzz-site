@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work — Ruzz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F7F5F0;
+    --ink: #1E1D1B;
+    --grey: #6B6B64;
+    --line: #D8D4C8;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'IBM Plex Sans', -apple-system, sans-serif;
+    color-scheme: light;
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1A1917;
+      --ink: #F0EDE5;
+      --grey: #9C9A91;
+      --line: #35332D;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1A1917;
+    --ink: #F0EDE5;
+    --grey: #9C9A91;
+    --line: #35332D;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body {
+    line-height: 1.6;
+  }
+  .page-content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+  a { color: var(--ink); }
+  header {
+    margin-bottom: 56px;
+  }
+  header a.back {
+    font-size: 15px;
+    color: var(--grey);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  header a.back:hover { color: var(--ink); border-color: var(--ink); }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 6vw, 44px);
+    margin: 24px 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    color: var(--grey);
+    font-size: 17px;
+    max-width: 50ch;
+  }
+  .entry {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+  }
+  .entry:last-child { border-bottom: 1px solid var(--line); }
+  .entry h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0 0 6px;
+  }
+  .entry p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--ink);
+    max-width: 62ch;
+  }
+  .writing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .writing-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+  }
+  .writing-list li:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .writing-list .pub {
+    color: var(--grey);
+    font-size: 14px;
+  }
+  h2.section-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 56px 0 24px;
+  }
+  footer {
+    margin-top: 72px;
+    font-size: 14px;
+    color: var(--grey);
+  }
+
+  .sitenav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .sitenav-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sitenav-mark {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    padding: 3px 2px;
+  }
+  .sitenav-links { display: flex; gap: 24px; }
+  .sitenav-link {
+    font-size: 15px;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .sitenav-link:hover { color: var(--grey); border-color: var(--grey); }
+  .sitenav-link.current { border-color: var(--ink); }
+</style>
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="sitenav-mark" href="/">Ruzz</a>
+    <div class="sitenav-links">
+      <a class="sitenav-link current" href="#">Work</a>
+      <a class="sitenav-link" href="/about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-content">
+<header>
+  <h1>Selected work</h1>
+  <p class="sub">Brand voice, tone systems and product UI. Delivered for orgs across fintech, SaaS, manufacturing, sport, luxury and more.</p>
+</header>
+
+<main>
+
+  <div class="entry">
+    <h2>Wio</h2>
+    <p>Verbal identity for a new UAE digital bank. Plus a 200+ pictogram system with thousands of searchable keyword tags, so designers and writers could find the right icon just by describing it. Part of a full UX writing pass across the MVP launch.</p>
+  </div>
+
+  <div class="entry">
+    <h2>Akbank</h2>
+    <p>A new tone of voice for Turkey's most valuable banking brand, built to work naturally in Turkish and English. It led to an ongoing partnership with Pentagram, creating two new sub-brands: Axess (credit card) and Juzdan (digital wallet).</p>
+  </div>
+
+  <div class="entry">
+    <h2>Siemens</h2>
+    <p>A global employer brand built from scratch. A new verbal identity that governed every market and channel, an editorial series celebrating staff from around the world, and the grammar/syntax logic behind an AI-driven job ad tool.</p>
+  </div>
+
+  <div class="entry">
+    <h2>LinkedIn</h2>
+    <p>A UI copy audit across 8 markets and 8 key surfaces, hunting for drift from the core brand voice. I led a team of native-language UX writers, laddering every edit back to the brand’s pillars, so each regional interface spoke consistently to its users.</p>
+  </div>
+
+  <div class="entry">
+    <h2>Fast Radius</h2>
+    <p>UX writing across a B2B manufacturing platform: onboarding, part configuration, order-tracking emails, and an internal estimation tool. Plus a model for writing with emotional intelligence, matching tone to how the user felt at each step.</p>
+  </div>
+
+  <div class="entry">
+    <h2>NatWest</h2>
+    <p>A founding tone of voice and full UX copy pass for "Tyl", a new merchant acquiry service aimed at small business owners. I worked on the product from the first quote flow through to onboarding and a tracking/insights system.</p>
+  </div>
+
+  <div class="entry">
+    <h2>Eurosport</h2>
+    <p>A new voice for the Eurosport Player streaming launch, built alongside the visual design system. The guiding principle: a tone of voice only works if it's actionable, shown through real examples, not just stated as abstract rules.</p>
+  </div>
+
+  <div class="entry">
+    <h2>British Land</h2>
+    <p>UX content for a new flexible workspace app, rolled out across 11 London locations. I built a modular "atomic" voice to match the product’s atomic design system, and devised a new room-naming logic for the physical spaces themselves.</p>
+  </div>
+
+  <div class="entry">
+    <h2>Google: Moon Stories</h2>
+    <p>20 interactive mobile stories distilling the 1969 Moon landing into character-led narratives, including lesser-known figures like Rita Rapp, NASA's food physiologist. Written in partnership with the Smithsonian for Apollo 11's 50th anniversary.</p>
+  </div>
+
+  <div class="entry">
+    <h2>McDonald's</h2>
+    <p>A series of concept scripts for a voice-activated storytelling app, built on 12 original stories by Cressida Cowell (author of How to Train Your Dragon). Still one of my favourite kinds of writing, blending narrative craft with interactive mechanics.</p>
+  </div>
+
+</main>
+
+  <h2 class="section-title">Thought leadership</h2>
+  <ul class="writing-list">
+    <li><a href="https://www.intercom.com/blog/how-to-build-a-content-design-agent/" target="_blank" rel="noopener">How to build a Content Design agent</a><br><span class="pub">Intercom Blog — Oct 2025</span></li>
+    <li><a href="https://www.intercom.com/blog/notes-from-a-product-design-vibe-coding-hackathon/" target="_blank" rel="noopener">Notes from a product design vibe coding hackathon</a><br><span class="pub">Intercom Blog — Jul 2025</span></li>
+    <li><a href="https://uxcontent.com/atomic-design-needs-atomic-writers/" target="_blank" rel="noopener">Atomic design needs atomic writers</a><br><span class="pub">UX Writers Collective — Oct 2020</span></li>
+    <li><a href="https://russthescribe.medium.com/the-rise-of-the-neo-writer-how-copywriting-is-rewriting-its-future-65a23d229f52" target="_blank" rel="noopener">The rise of the neo-writer</a><br><span class="pub">Medium — May 2020</span></li>
+    <li><a href="https://www.contagious.com/news-and-views/designers-and-writers-a-new-conversation-for-2019" target="_blank" rel="noopener">Designers and writers: a new conversation for 2019</a><br><span class="pub">Contagious — Jan 2019</span></li>
+    <li><a href="https://medium.com/next-practice/the-copy-behind-the-copy-8c4ad3443bd9" target="_blank" rel="noopener">The copy behind the copy</a><br><span class="pub">Contagious — Nov 2016</span></li>
+  </ul>
+
+<footer>
+  Russell Norris — <a href="mailto:russell.norris@ruzz.uk">russell.norris@ruzz.uk</a>
+</footer>
+</div>
+
+</body>
+</html>
